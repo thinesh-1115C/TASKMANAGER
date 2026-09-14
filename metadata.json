@@ -1,0 +1,6 @@
+{
+  "name": "Task Manager",
+  "description": "A comprehensive task manager with Google Tasks, Calendar, Drive, and Docs integrations, powered by Firebase, Gemini AI category suggestions, and interactive Recharts task completion analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": {
+    "Task": {
+      "title": "Task",
+      "description": "User task items",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "status": { "type": "string", "enum": ["todo", "in_progress", "completed"] },
+        "priority": { "type": "string", "enum": ["urgent", "high", "medium", "low"] },
+        "category": { "type": "string" },
+        "dueDate": { "type": "string" },
+        "dueTime": { "type": "string" },
+        "googleTaskId": { "type": "string" },
+        "googleCalendarEventId": { "type": "string" },
+        "attachedDocs": { "type": "array" },
+        "attachedDriveFiles": { "type": "array" },
+        "tags": { "type": "array" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["title", "status", "userId"]
+    },
+    "TaskList": {
+      "title": "TaskList",
+      "description": "Custom task list/project category",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "color": { "type": "string" },
+        "icon": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["name", "userId"]
+    }
+  }
+}
